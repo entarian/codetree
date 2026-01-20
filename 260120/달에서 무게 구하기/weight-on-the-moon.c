@@ -4,6 +4,6 @@ int main() {
     // Please write your code here.
     int chu=13;
     float moon=0.165;
-    printf("%.6f",chu*moon);
+    printf("%d * %lf = %.6lf",chu*moon);
     return 0;
 }
