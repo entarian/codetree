@@ -7,12 +7,12 @@ int main() {
     for(int i=0;i<a;i++){
         if(i%2==1){
             for(int r=a;r>0;r--){
-                printf("%d ",r);
+                printf("%d",r);
             }
         }
         else{
             for(int r=1;r<=a;r++){
-                printf("%d ",r);
+                printf("%d",r);
             }
         }
         printf("\n");
