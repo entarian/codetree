@@ -16,6 +16,9 @@ void prime(int a, int b){
                 if((c+d)%2==0){
                     pri=1;
                 }
+                else{
+                    pri=0;
+                }
             }
         }
         if(pri==1){
