@@ -7,6 +7,6 @@ int main() {
     int c=a;
     a=b;
     b=c;
-    print("%d\n%d",a,b);
+    printf("%d\n%d",a,b);
     return 0;
 }
