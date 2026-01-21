@@ -5,7 +5,7 @@ void cal(int m,int d){
         printf("No");
         return;
     }
-    if(0<d&&d<monthday[m]){
+    if(0<d&&d<=monthday[m]){
         printf("Yes");
     }
     else{
