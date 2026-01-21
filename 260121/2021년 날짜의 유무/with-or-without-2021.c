@@ -15,6 +15,7 @@ void cal(int m,int d){
         }
         else{
             printf("No");
+            break;
         }
         for(int r=1;r<=n;r++){
                 if(r!=d){
