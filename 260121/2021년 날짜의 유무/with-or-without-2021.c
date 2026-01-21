@@ -1,34 +1,11 @@
 #include <stdio.h>
 void cal(int m,int d){
-    int match=1;
-    for(int i=1;i<=12;i++){
-        int n=0;
-        match=1;
-        if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){
-            n=31;
-        }
-        else if(m==4||m==6||m==9||m==11){
-            n=30;
-        }
-        else if(m==2){
-            n=28;
-        }
-        else{
-            match=0;
-        }
-        for(int r=1;r<=n;r++){
-                if(r!=d){
-                    match=0;
-                    continue;
-                    
-                }
-                else{
-                    match=1;
-                    break;
-                }
-            }
+    int monthday[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+    if(m<1||m>12){
+        printf("No");
+        return;
     }
-    if(match==1){
+    if(0<d&&d<monthday[m]){
         printf("Yes");
     }
     else{
