@@ -14,8 +14,7 @@ void cal(int m,int d){
             n=28;
         }
         else{
-            printf("No");
-            break;
+            match=0;
         }
         for(int r=1;r<=n;r++){
                 if(r!=d){
