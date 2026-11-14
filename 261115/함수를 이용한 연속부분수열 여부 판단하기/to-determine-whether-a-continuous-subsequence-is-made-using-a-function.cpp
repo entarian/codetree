@@ -2,7 +2,7 @@
 using namespace std;
 bool is_Met(int a,int b,int am[],int bm[]){
     int num;
-    for(int i=0;i<a;i++){
+    for(int i=0;i<=a-b;i++){
         num=0;
         for(int r=0;r<b;r++){
             if(am[i+r]==bm[r]) num++;
