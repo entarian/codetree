@@ -1,19 +1,16 @@
 #include <iostream>
 using namespace std;
-int a=0;
 int ds(int n){
     if(n==1) return 0;
-    a++;
     if(n%2==0)
-        return ds(n/2);
+        return ds(n/2)+1;
     else if(n%2==1)
-        return ds(n/3);
+        return ds(n/3)+1;
 }
 int main() {
     int n;
     cin>>n;
-    ds(n);
-    cout<<a;
+    cout<<ds(n);
     // Please write your code here.
     return 0;
 }
