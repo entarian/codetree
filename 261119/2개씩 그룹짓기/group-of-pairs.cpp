@@ -11,12 +11,11 @@ int main() {
         cin>>arr[i];
     }
     sort(arr,arr+N);
-    int ars[n];
+    int Max_sum=0;
     for(int i=0;i<n;i++){
-        ars[i]=arr[i]+arr[N-i-1];
+        Max_sum=max(Max_sum,arr[i]+arr[N-i-1]);
     }
-    sort(ars,ars+n);
-    cout<<ars[n-1];
+    cout<<Max_sum;
     // Please write your code here.
     return 0;
 }
